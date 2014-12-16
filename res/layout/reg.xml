@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="91dp" >
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_marginTop="32dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_user"
+            android:layout_below="@+id/editText_user"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editText_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_nick"
+            android:layout_below="@+id/editText_nick"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_user"
+            android:layout_toRightOf="@+id/editText_pass"
+            android:text="*用户名" />
+
+        <TextView
+            android:id="@+id/textView_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText_pass"
+            android:layout_alignLeft="@+id/textView_username"
+            android:text="*昵称" />
+
+        <TextView
+            android:id="@+id/textView_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_pass"
+            android:layout_alignLeft="@+id/textView_nick"
+            android:text="*密码" />
+
+        <TextView
+            android:id="@+id/textView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_phone"
+            android:layout_alignLeft="@+id/textView_pass"
+            android:text="联系电话" />
+
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_nick"
+            android:layout_below="@+id/editText_user"
+            android:text="验证用户名" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_reg"
+            android:layout_alignBottom="@+id/button_reg"
+            android:layout_alignRight="@+id/textView_pass"
+            android:layout_marginRight="20dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/button_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button_check"
+            android:layout_below="@+id/editText_phone"
+            android:layout_marginTop="58dp"
+            android:text="注册" />
+
+        <TextView
+            android:id="@+id/textView_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="请注册" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="91dp" 
+            >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/menu_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="74dp"
+            android:textColor="@color/Red"
+            android:text="退出" 
+            
+            />
+
+        <Button
+            android:id="@+id/sensor_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_update"
+            android:layout_alignParentLeft="true"
+            android:text="绑定传感器" />
+
+        <Button
+            android:id="@+id/user_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_cancel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="36dp"
+            android:text="信息更新" />
+
+        <Button
+            android:id="@+id/sensor_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sensor_bind"
+            android:layout_alignParentLeft="true"
+            android:text="传感器信息" />
+
+        <Button
+            android:id="@+id/menu_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:text="注销" />
+
+    </RelativeLayout>
+
+</LinearLayout>

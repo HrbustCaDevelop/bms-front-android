@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="91dp" >
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/update_editText_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/relativeLayout1"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/update_editText_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/update_editText_nick"
+            android:layout_alignRight="@+id/update_editText_nick"
+            android:layout_below="@+id/update_editText_nick"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/update_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/update_editText_phone"
+            android:layout_alignLeft="@+id/update_pass"
+            android:text="联系电话" />
+
+        <TextView
+            android:id="@+id/update_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/update_editText_pass"
+            android:layout_alignLeft="@+id/update_nick"
+            android:text="密码" />
+
+        <Button
+            android:id="@+id/update_button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_textView_msg"
+            android:layout_marginTop="28dp"
+            android:layout_toLeftOf="@+id/update_textView_msg"
+            android:text="更新" />
+
+        <EditText
+            android:id="@+id/update_editText_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_toLeftOf="@+id/update_phone"
+            android:ems="10"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/update_textView_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_editText_phone"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/update_button_cancel"
+            android:text="请更新" />
+
+        <TextView
+            android:id="@+id/update_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/update_editText_pass"
+            android:layout_toRightOf="@+id/update_editText_pass"
+            android:text="昵称" />
+
+        <Button
+            android:id="@+id/update_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/update_button_update"
+            android:layout_alignBottom="@+id/update_button_update"
+            android:layout_alignRight="@+id/update_pass"
+            android:text="取消" />
+
+    </RelativeLayout>
+
+</LinearLayout>
