@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/notitle"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.ca.bms.front.activity.UpdateActivity"
+             >
+        </activity>
+        <activity
+            android:name="com.ca.bms.front.activity.MainActivity"
+             >
+
+        </activity>
+        <activity
+            android:name="com.ca.bms.front.activity.RegActivity"
+             >
+
+        </activity>
+        <activity
+            android:name="com.ca.bms.front.activity.MenuActivity"
+            android:label="ls" >
+
+        </activity>
+        <activity
+            android:name="com.ca.bms.front.activity.LoginActivity"
+            android:label="@string/app_name">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
