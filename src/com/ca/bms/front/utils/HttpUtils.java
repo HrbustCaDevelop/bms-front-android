@@ -11,6 +11,11 @@ import java.util.Map;
 
 
 
+/**
+ * http toolkit
+ * @author CAHUST
+ *
+ */
 class HttpRequest {
 
     public static String sendGet(String url, String param) {
